@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #2a2a72;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+  padding: 40px;
+}
+
+.user-form input {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #4c2885;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 -15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder {
+  color: #bbb;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.card {
+  max-width: 800px;
+  background-color: #4c2885;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 -15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin: 0 1.5rem;
+  padding: 3rem;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  border: 10px solid #2a2a72;
+  border-radius: 50%;
+  overflow-x: visible;
+}
+
+.user-info {
+  margin-left: 2rem;
+  color: #eee;
+}
+
+.user-info h2,
+.user-info p,
+.user-info ul {
+  padding: 10px 0 10px 0;
+}
+
+.user-info ul {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.repo {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #212a72;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 500px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
+}
